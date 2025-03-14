@@ -37,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-behavior: smooth;
 }
 
 .scale-up-ver-center {
@@ -84,6 +85,7 @@ body {
   top: 0;
   width: 100%;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Safari */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease-in-out;
@@ -770,8 +772,16 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
+
   .menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .opening-hours {
+    min-height: 70vh;
+
   }
 
   .opening-hours .hour-card {
