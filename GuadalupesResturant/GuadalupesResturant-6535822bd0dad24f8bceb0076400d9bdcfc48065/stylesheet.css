@@ -598,7 +598,7 @@ body {
 
 .opening-hours {
     margin-top: -100px;
-    min-height: 150vh;
+    min-height: 70vh;
     background-image: url("./Images/back\ red.png");
     padding: 80px 20px;
     text-align: center;
@@ -779,10 +779,7 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .opening-hours {
-    min-height: 70vh;
-
-  }
+  
 
   .opening-hours .hour-card {
     flex-basis: 100%;
